@@ -2,10 +2,15 @@ package iup
 
 /*
 #cgo linux LDFLAGS: -liup
+#cgo windows LDFLAGS: -liup -luuid -lgdi32 -lole32 -lcomctl32 -lcomdlg32
 #include <iup.h>
 #include <stdlib.h>
 */
 import "C"
+
+// not working
+// #cgo windows CFLAGS: -fno-stack-check -fno-stack-protector -mno-stack-arg-probe
+// -lmingwex -lmingw32
 
 import (
 	"unsafe"

@@ -1,7 +1,6 @@
 package iup
 
 /*
-#cgo linux LDFLAGS: -liup
 #include <iup.h>
 #include <stdlib.h>
 */

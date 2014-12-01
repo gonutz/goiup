@@ -4,7 +4,6 @@ import "reflect"
 
 /*
 
-#cgo linux LDFLAGS: -liup
 #include <iup.h>
 #include <stdlib.h>
 
@@ -1213,1204 +1212,2004 @@ func go_cb_handle_int_98(h *C.Ihandle, arg0 C.int) C.int { return C.int(callback
 func go_cb_handle_int_99(h *C.Ihandle, arg0 C.int) C.int { return C.int(callbacks_int[99](int(arg0))) }
 
 //export go_cb_handle_int_int_0
-func go_cb_handle_int_int_0(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[0](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_0(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[0](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_1
-func go_cb_handle_int_int_1(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[1](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_1(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[1](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_2
-func go_cb_handle_int_int_2(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[2](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_2(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[2](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_3
-func go_cb_handle_int_int_3(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[3](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_3(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[3](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_4
-func go_cb_handle_int_int_4(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[4](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_4(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[4](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_5
-func go_cb_handle_int_int_5(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[5](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_5(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[5](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_6
-func go_cb_handle_int_int_6(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[6](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_6(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[6](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_7
-func go_cb_handle_int_int_7(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[7](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_7(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[7](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_8
-func go_cb_handle_int_int_8(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[8](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_8(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[8](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_9
-func go_cb_handle_int_int_9(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[9](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_9(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[9](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_10
-func go_cb_handle_int_int_10(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[10](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_10(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[10](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_11
-func go_cb_handle_int_int_11(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[11](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_11(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[11](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_12
-func go_cb_handle_int_int_12(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[12](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_12(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[12](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_13
-func go_cb_handle_int_int_13(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[13](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_13(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[13](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_14
-func go_cb_handle_int_int_14(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[14](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_14(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[14](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_15
-func go_cb_handle_int_int_15(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[15](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_15(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[15](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_16
-func go_cb_handle_int_int_16(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[16](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_16(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[16](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_17
-func go_cb_handle_int_int_17(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[17](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_17(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[17](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_18
-func go_cb_handle_int_int_18(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[18](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_18(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[18](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_19
-func go_cb_handle_int_int_19(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[19](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_19(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[19](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_20
-func go_cb_handle_int_int_20(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[20](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_20(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[20](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_21
-func go_cb_handle_int_int_21(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[21](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_21(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[21](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_22
-func go_cb_handle_int_int_22(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[22](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_22(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[22](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_23
-func go_cb_handle_int_int_23(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[23](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_23(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[23](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_24
-func go_cb_handle_int_int_24(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[24](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_24(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[24](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_25
-func go_cb_handle_int_int_25(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[25](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_25(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[25](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_26
-func go_cb_handle_int_int_26(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[26](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_26(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[26](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_27
-func go_cb_handle_int_int_27(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[27](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_27(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[27](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_28
-func go_cb_handle_int_int_28(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[28](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_28(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[28](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_29
-func go_cb_handle_int_int_29(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[29](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_29(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[29](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_30
-func go_cb_handle_int_int_30(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[30](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_30(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[30](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_31
-func go_cb_handle_int_int_31(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[31](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_31(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[31](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_32
-func go_cb_handle_int_int_32(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[32](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_32(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[32](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_33
-func go_cb_handle_int_int_33(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[33](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_33(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[33](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_34
-func go_cb_handle_int_int_34(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[34](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_34(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[34](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_35
-func go_cb_handle_int_int_35(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[35](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_35(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[35](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_36
-func go_cb_handle_int_int_36(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[36](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_36(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[36](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_37
-func go_cb_handle_int_int_37(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[37](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_37(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[37](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_38
-func go_cb_handle_int_int_38(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[38](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_38(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[38](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_39
-func go_cb_handle_int_int_39(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[39](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_39(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[39](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_40
-func go_cb_handle_int_int_40(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[40](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_40(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[40](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_41
-func go_cb_handle_int_int_41(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[41](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_41(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[41](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_42
-func go_cb_handle_int_int_42(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[42](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_42(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[42](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_43
-func go_cb_handle_int_int_43(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[43](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_43(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[43](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_44
-func go_cb_handle_int_int_44(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[44](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_44(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[44](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_45
-func go_cb_handle_int_int_45(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[45](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_45(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[45](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_46
-func go_cb_handle_int_int_46(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[46](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_46(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[46](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_47
-func go_cb_handle_int_int_47(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[47](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_47(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[47](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_48
-func go_cb_handle_int_int_48(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[48](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_48(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[48](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_49
-func go_cb_handle_int_int_49(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[49](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_49(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[49](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_50
-func go_cb_handle_int_int_50(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[50](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_50(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[50](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_51
-func go_cb_handle_int_int_51(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[51](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_51(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[51](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_52
-func go_cb_handle_int_int_52(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[52](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_52(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[52](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_53
-func go_cb_handle_int_int_53(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[53](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_53(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[53](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_54
-func go_cb_handle_int_int_54(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[54](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_54(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[54](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_55
-func go_cb_handle_int_int_55(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[55](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_55(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[55](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_56
-func go_cb_handle_int_int_56(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[56](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_56(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[56](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_57
-func go_cb_handle_int_int_57(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[57](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_57(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[57](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_58
-func go_cb_handle_int_int_58(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[58](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_58(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[58](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_59
-func go_cb_handle_int_int_59(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[59](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_59(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[59](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_60
-func go_cb_handle_int_int_60(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[60](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_60(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[60](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_61
-func go_cb_handle_int_int_61(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[61](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_61(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[61](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_62
-func go_cb_handle_int_int_62(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[62](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_62(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[62](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_63
-func go_cb_handle_int_int_63(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[63](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_63(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[63](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_64
-func go_cb_handle_int_int_64(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[64](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_64(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[64](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_65
-func go_cb_handle_int_int_65(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[65](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_65(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[65](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_66
-func go_cb_handle_int_int_66(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[66](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_66(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[66](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_67
-func go_cb_handle_int_int_67(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[67](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_67(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[67](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_68
-func go_cb_handle_int_int_68(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[68](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_68(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[68](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_69
-func go_cb_handle_int_int_69(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[69](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_69(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[69](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_70
-func go_cb_handle_int_int_70(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[70](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_70(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[70](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_71
-func go_cb_handle_int_int_71(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[71](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_71(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[71](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_72
-func go_cb_handle_int_int_72(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[72](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_72(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[72](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_73
-func go_cb_handle_int_int_73(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[73](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_73(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[73](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_74
-func go_cb_handle_int_int_74(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[74](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_74(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[74](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_75
-func go_cb_handle_int_int_75(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[75](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_75(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[75](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_76
-func go_cb_handle_int_int_76(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[76](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_76(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[76](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_77
-func go_cb_handle_int_int_77(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[77](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_77(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[77](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_78
-func go_cb_handle_int_int_78(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[78](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_78(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[78](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_79
-func go_cb_handle_int_int_79(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[79](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_79(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[79](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_80
-func go_cb_handle_int_int_80(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[80](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_80(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[80](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_81
-func go_cb_handle_int_int_81(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[81](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_81(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[81](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_82
-func go_cb_handle_int_int_82(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[82](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_82(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[82](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_83
-func go_cb_handle_int_int_83(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[83](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_83(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[83](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_84
-func go_cb_handle_int_int_84(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[84](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_84(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[84](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_85
-func go_cb_handle_int_int_85(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[85](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_85(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[85](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_86
-func go_cb_handle_int_int_86(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[86](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_86(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[86](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_87
-func go_cb_handle_int_int_87(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[87](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_87(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[87](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_88
-func go_cb_handle_int_int_88(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[88](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_88(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[88](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_89
-func go_cb_handle_int_int_89(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[89](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_89(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[89](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_90
-func go_cb_handle_int_int_90(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[90](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_90(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[90](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_91
-func go_cb_handle_int_int_91(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[91](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_91(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[91](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_92
-func go_cb_handle_int_int_92(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[92](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_92(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[92](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_93
-func go_cb_handle_int_int_93(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[93](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_93(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[93](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_94
-func go_cb_handle_int_int_94(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[94](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_94(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[94](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_95
-func go_cb_handle_int_int_95(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[95](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_95(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[95](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_96
-func go_cb_handle_int_int_96(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[96](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_96(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[96](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_97
-func go_cb_handle_int_int_97(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[97](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_97(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[97](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_98
-func go_cb_handle_int_int_98(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[98](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_98(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[98](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_99
-func go_cb_handle_int_int_99(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int { return C.int(callbacks_int_int[99](int(arg0), int(arg1))) }
+func go_cb_handle_int_int_99(h *C.Ihandle, arg0 C.int, arg1 C.int) C.int {
+	return C.int(callbacks_int_int[99](int(arg0), int(arg1)))
+}
 
 //export go_cb_handle_int_int_string_0
-func go_cb_handle_int_int_string_0(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[0](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_0(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[0](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_1
-func go_cb_handle_int_int_string_1(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[1](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_1(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[1](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_2
-func go_cb_handle_int_int_string_2(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[2](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_2(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[2](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_3
-func go_cb_handle_int_int_string_3(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[3](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_3(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[3](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_4
-func go_cb_handle_int_int_string_4(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[4](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_4(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[4](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_5
-func go_cb_handle_int_int_string_5(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[5](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_5(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[5](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_6
-func go_cb_handle_int_int_string_6(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[6](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_6(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[6](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_7
-func go_cb_handle_int_int_string_7(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[7](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_7(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[7](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_8
-func go_cb_handle_int_int_string_8(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[8](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_8(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[8](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_9
-func go_cb_handle_int_int_string_9(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[9](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_9(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[9](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_10
-func go_cb_handle_int_int_string_10(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[10](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_10(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[10](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_11
-func go_cb_handle_int_int_string_11(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[11](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_11(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[11](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_12
-func go_cb_handle_int_int_string_12(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[12](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_12(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[12](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_13
-func go_cb_handle_int_int_string_13(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[13](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_13(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[13](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_14
-func go_cb_handle_int_int_string_14(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[14](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_14(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[14](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_15
-func go_cb_handle_int_int_string_15(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[15](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_15(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[15](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_16
-func go_cb_handle_int_int_string_16(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[16](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_16(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[16](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_17
-func go_cb_handle_int_int_string_17(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[17](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_17(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[17](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_18
-func go_cb_handle_int_int_string_18(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[18](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_18(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[18](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_19
-func go_cb_handle_int_int_string_19(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[19](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_19(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[19](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_20
-func go_cb_handle_int_int_string_20(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[20](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_20(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[20](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_21
-func go_cb_handle_int_int_string_21(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[21](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_21(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[21](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_22
-func go_cb_handle_int_int_string_22(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[22](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_22(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[22](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_23
-func go_cb_handle_int_int_string_23(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[23](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_23(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[23](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_24
-func go_cb_handle_int_int_string_24(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[24](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_24(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[24](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_25
-func go_cb_handle_int_int_string_25(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[25](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_25(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[25](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_26
-func go_cb_handle_int_int_string_26(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[26](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_26(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[26](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_27
-func go_cb_handle_int_int_string_27(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[27](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_27(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[27](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_28
-func go_cb_handle_int_int_string_28(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[28](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_28(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[28](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_29
-func go_cb_handle_int_int_string_29(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[29](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_29(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[29](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_30
-func go_cb_handle_int_int_string_30(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[30](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_30(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[30](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_31
-func go_cb_handle_int_int_string_31(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[31](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_31(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[31](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_32
-func go_cb_handle_int_int_string_32(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[32](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_32(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[32](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_33
-func go_cb_handle_int_int_string_33(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[33](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_33(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[33](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_34
-func go_cb_handle_int_int_string_34(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[34](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_34(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[34](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_35
-func go_cb_handle_int_int_string_35(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[35](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_35(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[35](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_36
-func go_cb_handle_int_int_string_36(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[36](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_36(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[36](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_37
-func go_cb_handle_int_int_string_37(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[37](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_37(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[37](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_38
-func go_cb_handle_int_int_string_38(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[38](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_38(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[38](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_39
-func go_cb_handle_int_int_string_39(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[39](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_39(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[39](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_40
-func go_cb_handle_int_int_string_40(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[40](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_40(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[40](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_41
-func go_cb_handle_int_int_string_41(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[41](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_41(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[41](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_42
-func go_cb_handle_int_int_string_42(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[42](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_42(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[42](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_43
-func go_cb_handle_int_int_string_43(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[43](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_43(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[43](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_44
-func go_cb_handle_int_int_string_44(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[44](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_44(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[44](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_45
-func go_cb_handle_int_int_string_45(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[45](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_45(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[45](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_46
-func go_cb_handle_int_int_string_46(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[46](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_46(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[46](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_47
-func go_cb_handle_int_int_string_47(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[47](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_47(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[47](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_48
-func go_cb_handle_int_int_string_48(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[48](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_48(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[48](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_49
-func go_cb_handle_int_int_string_49(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[49](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_49(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[49](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_50
-func go_cb_handle_int_int_string_50(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[50](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_50(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[50](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_51
-func go_cb_handle_int_int_string_51(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[51](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_51(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[51](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_52
-func go_cb_handle_int_int_string_52(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[52](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_52(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[52](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_53
-func go_cb_handle_int_int_string_53(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[53](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_53(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[53](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_54
-func go_cb_handle_int_int_string_54(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[54](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_54(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[54](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_55
-func go_cb_handle_int_int_string_55(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[55](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_55(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[55](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_56
-func go_cb_handle_int_int_string_56(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[56](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_56(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[56](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_57
-func go_cb_handle_int_int_string_57(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[57](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_57(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[57](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_58
-func go_cb_handle_int_int_string_58(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[58](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_58(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[58](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_59
-func go_cb_handle_int_int_string_59(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[59](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_59(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[59](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_60
-func go_cb_handle_int_int_string_60(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[60](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_60(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[60](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_61
-func go_cb_handle_int_int_string_61(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[61](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_61(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[61](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_62
-func go_cb_handle_int_int_string_62(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[62](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_62(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[62](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_63
-func go_cb_handle_int_int_string_63(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[63](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_63(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[63](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_64
-func go_cb_handle_int_int_string_64(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[64](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_64(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[64](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_65
-func go_cb_handle_int_int_string_65(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[65](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_65(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[65](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_66
-func go_cb_handle_int_int_string_66(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[66](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_66(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[66](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_67
-func go_cb_handle_int_int_string_67(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[67](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_67(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[67](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_68
-func go_cb_handle_int_int_string_68(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[68](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_68(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[68](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_69
-func go_cb_handle_int_int_string_69(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[69](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_69(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[69](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_70
-func go_cb_handle_int_int_string_70(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[70](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_70(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[70](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_71
-func go_cb_handle_int_int_string_71(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[71](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_71(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[71](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_72
-func go_cb_handle_int_int_string_72(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[72](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_72(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[72](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_73
-func go_cb_handle_int_int_string_73(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[73](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_73(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[73](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_74
-func go_cb_handle_int_int_string_74(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[74](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_74(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[74](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_75
-func go_cb_handle_int_int_string_75(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[75](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_75(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[75](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_76
-func go_cb_handle_int_int_string_76(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[76](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_76(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[76](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_77
-func go_cb_handle_int_int_string_77(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[77](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_77(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[77](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_78
-func go_cb_handle_int_int_string_78(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[78](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_78(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[78](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_79
-func go_cb_handle_int_int_string_79(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[79](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_79(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[79](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_80
-func go_cb_handle_int_int_string_80(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[80](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_80(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[80](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_81
-func go_cb_handle_int_int_string_81(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[81](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_81(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[81](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_82
-func go_cb_handle_int_int_string_82(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[82](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_82(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[82](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_83
-func go_cb_handle_int_int_string_83(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[83](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_83(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[83](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_84
-func go_cb_handle_int_int_string_84(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[84](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_84(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[84](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_85
-func go_cb_handle_int_int_string_85(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[85](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_85(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[85](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_86
-func go_cb_handle_int_int_string_86(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[86](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_86(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[86](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_87
-func go_cb_handle_int_int_string_87(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[87](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_87(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[87](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_88
-func go_cb_handle_int_int_string_88(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[88](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_88(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[88](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_89
-func go_cb_handle_int_int_string_89(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[89](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_89(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[89](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_90
-func go_cb_handle_int_int_string_90(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[90](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_90(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[90](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_91
-func go_cb_handle_int_int_string_91(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[91](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_91(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[91](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_92
-func go_cb_handle_int_int_string_92(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[92](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_92(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[92](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_93
-func go_cb_handle_int_int_string_93(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[93](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_93(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[93](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_94
-func go_cb_handle_int_int_string_94(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[94](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_94(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[94](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_95
-func go_cb_handle_int_int_string_95(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[95](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_95(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[95](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_96
-func go_cb_handle_int_int_string_96(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[96](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_96(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[96](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_97
-func go_cb_handle_int_int_string_97(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[97](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_97(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[97](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_98
-func go_cb_handle_int_int_string_98(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[98](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_98(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[98](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_string_99
-func go_cb_handle_int_int_string_99(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int { return C.int(callbacks_int_int_string[99](int(arg0), int(arg1), C.GoString(arg2))) }
+func go_cb_handle_int_int_string_99(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 *C.char) C.int {
+	return C.int(callbacks_int_int_string[99](int(arg0), int(arg1), C.GoString(arg2)))
+}
 
 //export go_cb_handle_int_int_int_int_string_0
-func go_cb_handle_int_int_int_int_string_0(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[0](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_0(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[0](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_1
-func go_cb_handle_int_int_int_int_string_1(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[1](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_1(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[1](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_2
-func go_cb_handle_int_int_int_int_string_2(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[2](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_2(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[2](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_3
-func go_cb_handle_int_int_int_int_string_3(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[3](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_3(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[3](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_4
-func go_cb_handle_int_int_int_int_string_4(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[4](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_4(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[4](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_5
-func go_cb_handle_int_int_int_int_string_5(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[5](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_5(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[5](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_6
-func go_cb_handle_int_int_int_int_string_6(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[6](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_6(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[6](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_7
-func go_cb_handle_int_int_int_int_string_7(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[7](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_7(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[7](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_8
-func go_cb_handle_int_int_int_int_string_8(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[8](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_8(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[8](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_9
-func go_cb_handle_int_int_int_int_string_9(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[9](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_9(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[9](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_10
-func go_cb_handle_int_int_int_int_string_10(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[10](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_10(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[10](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_11
-func go_cb_handle_int_int_int_int_string_11(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[11](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_11(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[11](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_12
-func go_cb_handle_int_int_int_int_string_12(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[12](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_12(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[12](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_13
-func go_cb_handle_int_int_int_int_string_13(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[13](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_13(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[13](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_14
-func go_cb_handle_int_int_int_int_string_14(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[14](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_14(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[14](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_15
-func go_cb_handle_int_int_int_int_string_15(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[15](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_15(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[15](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_16
-func go_cb_handle_int_int_int_int_string_16(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[16](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_16(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[16](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_17
-func go_cb_handle_int_int_int_int_string_17(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[17](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_17(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[17](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_18
-func go_cb_handle_int_int_int_int_string_18(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[18](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_18(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[18](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_19
-func go_cb_handle_int_int_int_int_string_19(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[19](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_19(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[19](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_20
-func go_cb_handle_int_int_int_int_string_20(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[20](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_20(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[20](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_21
-func go_cb_handle_int_int_int_int_string_21(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[21](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_21(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[21](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_22
-func go_cb_handle_int_int_int_int_string_22(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[22](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_22(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[22](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_23
-func go_cb_handle_int_int_int_int_string_23(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[23](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_23(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[23](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_24
-func go_cb_handle_int_int_int_int_string_24(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[24](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_24(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[24](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_25
-func go_cb_handle_int_int_int_int_string_25(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[25](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_25(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[25](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_26
-func go_cb_handle_int_int_int_int_string_26(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[26](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_26(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[26](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_27
-func go_cb_handle_int_int_int_int_string_27(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[27](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_27(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[27](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_28
-func go_cb_handle_int_int_int_int_string_28(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[28](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_28(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[28](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_29
-func go_cb_handle_int_int_int_int_string_29(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[29](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_29(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[29](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_30
-func go_cb_handle_int_int_int_int_string_30(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[30](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_30(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[30](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_31
-func go_cb_handle_int_int_int_int_string_31(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[31](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_31(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[31](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_32
-func go_cb_handle_int_int_int_int_string_32(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[32](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_32(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[32](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_33
-func go_cb_handle_int_int_int_int_string_33(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[33](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_33(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[33](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_34
-func go_cb_handle_int_int_int_int_string_34(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[34](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_34(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[34](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_35
-func go_cb_handle_int_int_int_int_string_35(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[35](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_35(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[35](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_36
-func go_cb_handle_int_int_int_int_string_36(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[36](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_36(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[36](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_37
-func go_cb_handle_int_int_int_int_string_37(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[37](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_37(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[37](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_38
-func go_cb_handle_int_int_int_int_string_38(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[38](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_38(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[38](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_39
-func go_cb_handle_int_int_int_int_string_39(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[39](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_39(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[39](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_40
-func go_cb_handle_int_int_int_int_string_40(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[40](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_40(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[40](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_41
-func go_cb_handle_int_int_int_int_string_41(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[41](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_41(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[41](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_42
-func go_cb_handle_int_int_int_int_string_42(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[42](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_42(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[42](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_43
-func go_cb_handle_int_int_int_int_string_43(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[43](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_43(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[43](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_44
-func go_cb_handle_int_int_int_int_string_44(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[44](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_44(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[44](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_45
-func go_cb_handle_int_int_int_int_string_45(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[45](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_45(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[45](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_46
-func go_cb_handle_int_int_int_int_string_46(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[46](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_46(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[46](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_47
-func go_cb_handle_int_int_int_int_string_47(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[47](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_47(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[47](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_48
-func go_cb_handle_int_int_int_int_string_48(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[48](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_48(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[48](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_49
-func go_cb_handle_int_int_int_int_string_49(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[49](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_49(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[49](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_50
-func go_cb_handle_int_int_int_int_string_50(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[50](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_50(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[50](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_51
-func go_cb_handle_int_int_int_int_string_51(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[51](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_51(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[51](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_52
-func go_cb_handle_int_int_int_int_string_52(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[52](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_52(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[52](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_53
-func go_cb_handle_int_int_int_int_string_53(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[53](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_53(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[53](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_54
-func go_cb_handle_int_int_int_int_string_54(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[54](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_54(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[54](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_55
-func go_cb_handle_int_int_int_int_string_55(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[55](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_55(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[55](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_56
-func go_cb_handle_int_int_int_int_string_56(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[56](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_56(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[56](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_57
-func go_cb_handle_int_int_int_int_string_57(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[57](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_57(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[57](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_58
-func go_cb_handle_int_int_int_int_string_58(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[58](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_58(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[58](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_59
-func go_cb_handle_int_int_int_int_string_59(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[59](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_59(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[59](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_60
-func go_cb_handle_int_int_int_int_string_60(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[60](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_60(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[60](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_61
-func go_cb_handle_int_int_int_int_string_61(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[61](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_61(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[61](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_62
-func go_cb_handle_int_int_int_int_string_62(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[62](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_62(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[62](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_63
-func go_cb_handle_int_int_int_int_string_63(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[63](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_63(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[63](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_64
-func go_cb_handle_int_int_int_int_string_64(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[64](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_64(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[64](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_65
-func go_cb_handle_int_int_int_int_string_65(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[65](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_65(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[65](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_66
-func go_cb_handle_int_int_int_int_string_66(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[66](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_66(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[66](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_67
-func go_cb_handle_int_int_int_int_string_67(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[67](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_67(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[67](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_68
-func go_cb_handle_int_int_int_int_string_68(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[68](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_68(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[68](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_69
-func go_cb_handle_int_int_int_int_string_69(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[69](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_69(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[69](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_70
-func go_cb_handle_int_int_int_int_string_70(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[70](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_70(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[70](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_71
-func go_cb_handle_int_int_int_int_string_71(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[71](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_71(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[71](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_72
-func go_cb_handle_int_int_int_int_string_72(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[72](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_72(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[72](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_73
-func go_cb_handle_int_int_int_int_string_73(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[73](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_73(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[73](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_74
-func go_cb_handle_int_int_int_int_string_74(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[74](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_74(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[74](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_75
-func go_cb_handle_int_int_int_int_string_75(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[75](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_75(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[75](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_76
-func go_cb_handle_int_int_int_int_string_76(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[76](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_76(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[76](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_77
-func go_cb_handle_int_int_int_int_string_77(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[77](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_77(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[77](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_78
-func go_cb_handle_int_int_int_int_string_78(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[78](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_78(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[78](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_79
-func go_cb_handle_int_int_int_int_string_79(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[79](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_79(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[79](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_80
-func go_cb_handle_int_int_int_int_string_80(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[80](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_80(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[80](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_81
-func go_cb_handle_int_int_int_int_string_81(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[81](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_81(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[81](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_82
-func go_cb_handle_int_int_int_int_string_82(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[82](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_82(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[82](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_83
-func go_cb_handle_int_int_int_int_string_83(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[83](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_83(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[83](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_84
-func go_cb_handle_int_int_int_int_string_84(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[84](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_84(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[84](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_85
-func go_cb_handle_int_int_int_int_string_85(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[85](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_85(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[85](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_86
-func go_cb_handle_int_int_int_int_string_86(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[86](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_86(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[86](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_87
-func go_cb_handle_int_int_int_int_string_87(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[87](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_87(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[87](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_88
-func go_cb_handle_int_int_int_int_string_88(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[88](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_88(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[88](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_89
-func go_cb_handle_int_int_int_int_string_89(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[89](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_89(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[89](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_90
-func go_cb_handle_int_int_int_int_string_90(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[90](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_90(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[90](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_91
-func go_cb_handle_int_int_int_int_string_91(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[91](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_91(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[91](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_92
-func go_cb_handle_int_int_int_int_string_92(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[92](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_92(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[92](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_93
-func go_cb_handle_int_int_int_int_string_93(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[93](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_93(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[93](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_94
-func go_cb_handle_int_int_int_int_string_94(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[94](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_94(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[94](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_95
-func go_cb_handle_int_int_int_int_string_95(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[95](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_95(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[95](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_96
-func go_cb_handle_int_int_int_int_string_96(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[96](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_96(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[96](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_97
-func go_cb_handle_int_int_int_int_string_97(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[97](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_97(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[97](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_98
-func go_cb_handle_int_int_int_int_string_98(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[98](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_98(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[98](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_int_int_int_int_string_99
-func go_cb_handle_int_int_int_int_string_99(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int { return C.int(callbacks_int_int_int_int_string[99](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4))) }
+func go_cb_handle_int_int_int_int_string_99(h *C.Ihandle, arg0 C.int, arg1 C.int, arg2 C.int, arg3 C.int, arg4 *C.char) C.int {
+	return C.int(callbacks_int_int_int_int_string[99](int(arg0), int(arg1), int(arg2), int(arg3), C.GoString(arg4)))
+}
 
 //export go_cb_handle_string_int_int_int_0
-func go_cb_handle_string_int_int_int_0(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[0](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_0(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[0](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_1
-func go_cb_handle_string_int_int_int_1(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[1](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_1(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[1](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_2
-func go_cb_handle_string_int_int_int_2(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[2](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_2(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[2](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_3
-func go_cb_handle_string_int_int_int_3(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[3](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_3(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[3](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_4
-func go_cb_handle_string_int_int_int_4(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[4](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_4(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[4](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_5
-func go_cb_handle_string_int_int_int_5(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[5](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_5(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[5](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_6
-func go_cb_handle_string_int_int_int_6(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[6](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_6(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[6](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_7
-func go_cb_handle_string_int_int_int_7(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[7](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_7(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[7](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_8
-func go_cb_handle_string_int_int_int_8(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[8](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_8(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[8](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_9
-func go_cb_handle_string_int_int_int_9(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[9](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_9(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[9](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_10
-func go_cb_handle_string_int_int_int_10(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[10](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_10(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[10](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_11
-func go_cb_handle_string_int_int_int_11(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[11](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_11(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[11](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_12
-func go_cb_handle_string_int_int_int_12(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[12](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_12(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[12](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_13
-func go_cb_handle_string_int_int_int_13(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[13](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_13(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[13](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_14
-func go_cb_handle_string_int_int_int_14(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[14](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_14(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[14](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_15
-func go_cb_handle_string_int_int_int_15(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[15](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_15(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[15](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_16
-func go_cb_handle_string_int_int_int_16(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[16](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_16(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[16](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_17
-func go_cb_handle_string_int_int_int_17(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[17](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_17(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[17](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_18
-func go_cb_handle_string_int_int_int_18(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[18](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_18(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[18](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_19
-func go_cb_handle_string_int_int_int_19(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[19](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_19(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[19](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_20
-func go_cb_handle_string_int_int_int_20(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[20](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_20(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[20](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_21
-func go_cb_handle_string_int_int_int_21(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[21](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_21(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[21](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_22
-func go_cb_handle_string_int_int_int_22(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[22](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_22(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[22](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_23
-func go_cb_handle_string_int_int_int_23(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[23](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_23(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[23](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_24
-func go_cb_handle_string_int_int_int_24(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[24](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_24(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[24](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_25
-func go_cb_handle_string_int_int_int_25(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[25](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_25(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[25](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_26
-func go_cb_handle_string_int_int_int_26(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[26](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_26(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[26](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_27
-func go_cb_handle_string_int_int_int_27(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[27](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_27(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[27](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_28
-func go_cb_handle_string_int_int_int_28(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[28](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_28(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[28](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_29
-func go_cb_handle_string_int_int_int_29(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[29](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_29(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[29](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_30
-func go_cb_handle_string_int_int_int_30(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[30](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_30(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[30](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_31
-func go_cb_handle_string_int_int_int_31(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[31](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_31(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[31](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_32
-func go_cb_handle_string_int_int_int_32(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[32](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_32(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[32](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_33
-func go_cb_handle_string_int_int_int_33(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[33](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_33(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[33](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_34
-func go_cb_handle_string_int_int_int_34(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[34](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_34(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[34](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_35
-func go_cb_handle_string_int_int_int_35(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[35](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_35(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[35](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_36
-func go_cb_handle_string_int_int_int_36(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[36](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_36(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[36](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_37
-func go_cb_handle_string_int_int_int_37(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[37](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_37(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[37](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_38
-func go_cb_handle_string_int_int_int_38(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[38](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_38(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[38](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_39
-func go_cb_handle_string_int_int_int_39(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[39](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_39(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[39](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_40
-func go_cb_handle_string_int_int_int_40(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[40](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_40(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[40](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_41
-func go_cb_handle_string_int_int_int_41(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[41](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_41(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[41](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_42
-func go_cb_handle_string_int_int_int_42(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[42](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_42(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[42](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_43
-func go_cb_handle_string_int_int_int_43(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[43](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_43(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[43](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_44
-func go_cb_handle_string_int_int_int_44(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[44](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_44(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[44](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_45
-func go_cb_handle_string_int_int_int_45(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[45](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_45(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[45](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_46
-func go_cb_handle_string_int_int_int_46(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[46](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_46(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[46](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_47
-func go_cb_handle_string_int_int_int_47(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[47](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_47(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[47](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_48
-func go_cb_handle_string_int_int_int_48(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[48](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_48(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[48](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_49
-func go_cb_handle_string_int_int_int_49(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[49](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_49(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[49](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_50
-func go_cb_handle_string_int_int_int_50(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[50](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_50(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[50](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_51
-func go_cb_handle_string_int_int_int_51(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[51](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_51(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[51](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_52
-func go_cb_handle_string_int_int_int_52(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[52](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_52(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[52](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_53
-func go_cb_handle_string_int_int_int_53(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[53](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_53(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[53](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_54
-func go_cb_handle_string_int_int_int_54(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[54](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_54(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[54](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_55
-func go_cb_handle_string_int_int_int_55(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[55](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_55(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[55](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_56
-func go_cb_handle_string_int_int_int_56(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[56](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_56(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[56](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_57
-func go_cb_handle_string_int_int_int_57(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[57](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_57(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[57](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_58
-func go_cb_handle_string_int_int_int_58(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[58](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_58(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[58](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_59
-func go_cb_handle_string_int_int_int_59(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[59](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_59(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[59](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_60
-func go_cb_handle_string_int_int_int_60(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[60](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_60(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[60](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_61
-func go_cb_handle_string_int_int_int_61(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[61](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_61(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[61](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_62
-func go_cb_handle_string_int_int_int_62(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[62](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_62(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[62](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_63
-func go_cb_handle_string_int_int_int_63(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[63](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_63(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[63](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_64
-func go_cb_handle_string_int_int_int_64(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[64](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_64(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[64](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_65
-func go_cb_handle_string_int_int_int_65(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[65](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_65(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[65](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_66
-func go_cb_handle_string_int_int_int_66(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[66](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_66(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[66](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_67
-func go_cb_handle_string_int_int_int_67(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[67](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_67(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[67](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_68
-func go_cb_handle_string_int_int_int_68(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[68](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_68(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[68](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_69
-func go_cb_handle_string_int_int_int_69(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[69](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_69(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[69](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_70
-func go_cb_handle_string_int_int_int_70(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[70](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_70(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[70](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_71
-func go_cb_handle_string_int_int_int_71(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[71](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_71(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[71](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_72
-func go_cb_handle_string_int_int_int_72(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[72](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_72(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[72](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_73
-func go_cb_handle_string_int_int_int_73(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[73](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_73(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[73](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_74
-func go_cb_handle_string_int_int_int_74(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[74](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_74(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[74](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_75
-func go_cb_handle_string_int_int_int_75(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[75](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_75(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[75](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_76
-func go_cb_handle_string_int_int_int_76(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[76](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_76(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[76](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_77
-func go_cb_handle_string_int_int_int_77(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[77](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_77(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[77](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_78
-func go_cb_handle_string_int_int_int_78(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[78](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_78(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[78](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_79
-func go_cb_handle_string_int_int_int_79(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[79](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_79(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[79](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_80
-func go_cb_handle_string_int_int_int_80(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[80](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_80(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[80](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_81
-func go_cb_handle_string_int_int_int_81(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[81](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_81(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[81](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_82
-func go_cb_handle_string_int_int_int_82(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[82](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_82(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[82](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_83
-func go_cb_handle_string_int_int_int_83(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[83](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_83(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[83](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_84
-func go_cb_handle_string_int_int_int_84(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[84](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_84(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[84](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_85
-func go_cb_handle_string_int_int_int_85(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[85](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_85(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[85](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_86
-func go_cb_handle_string_int_int_int_86(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[86](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_86(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[86](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_87
-func go_cb_handle_string_int_int_int_87(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[87](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_87(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[87](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_88
-func go_cb_handle_string_int_int_int_88(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[88](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_88(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[88](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_89
-func go_cb_handle_string_int_int_int_89(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[89](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_89(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[89](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_90
-func go_cb_handle_string_int_int_int_90(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[90](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_90(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[90](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_91
-func go_cb_handle_string_int_int_int_91(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[91](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_91(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[91](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_92
-func go_cb_handle_string_int_int_int_92(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[92](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_92(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[92](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_93
-func go_cb_handle_string_int_int_int_93(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[93](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_93(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[93](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_94
-func go_cb_handle_string_int_int_int_94(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[94](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_94(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[94](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_95
-func go_cb_handle_string_int_int_int_95(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[95](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_95(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[95](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_96
-func go_cb_handle_string_int_int_int_96(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[96](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_96(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[96](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_97
-func go_cb_handle_string_int_int_int_97(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[97](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_97(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[97](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_98
-func go_cb_handle_string_int_int_int_98(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[98](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_98(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[98](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 //export go_cb_handle_string_int_int_int_99
-func go_cb_handle_string_int_int_int_99(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int { return C.int(callbacks_string_int_int_int[99](C.GoString(arg0), int(arg1), int(arg2), int(arg3))) }
+func go_cb_handle_string_int_int_int_99(h *C.Ihandle, arg0 *C.char, arg1 C.int, arg2 C.int, arg3 C.int) C.int {
+	return C.int(callbacks_string_int_int_int[99](C.GoString(arg0), int(arg1), int(arg2), int(arg3)))
+}
 
 var cCallbacks_none = []C.Icallback{
 	(C.Icallback)(C.go_cb_handle_none_0),

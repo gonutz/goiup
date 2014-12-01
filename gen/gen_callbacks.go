@@ -41,7 +41,6 @@ import "reflect"
 
 /*
 
-#cgo linux LDFLAGS: -liup
 #include <iup.h>
 #include <stdlib.h>
 
