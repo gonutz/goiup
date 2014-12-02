@@ -114,3 +114,9 @@ func Val(orientation string) *Handle {
 func Dialog(child *Handle) *Handle {
 	return (*Handle)(C.IupDialog(child.cptr()))
 }
+
+func FileDialog() *Handle     { return (*Handle)(C.IupFileDlg()) }
+func MessageDialog() *Handle  { return (*Handle)(C.IupMessageDlg()) }
+func ColorDialog() *Handle    { return (*Handle)(C.IupColorDlg()) }
+func FontDialog() *Handle     { return (*Handle)(C.IupFontDlg()) }
+func ProgressDialog() *Handle { return (*Handle)(C.IupProgressDlg()) }

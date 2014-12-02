@@ -29,16 +29,79 @@ const (
 
 // TODO convert os.Args to int* and char** and pass them to IupOpen
 // then place the (possibly modified) args back into os.Args
-func Open() int {
-	return int(C.IupOpen(nil, nil))
+func Open() int { return int(C.IupOpen(nil, nil)) }
+func Close()    { C.IupClose() }
+
+//func ImageLibOpen()      { C.IupImageLibOpen() } // TODO undefined ref
+func MainLoop() int      { return int(C.IupMainLoop()) }
+func LoopStep() int      { return int(C.IupLoopStep()) }
+func LoopStepWait() int  { return int(C.IupLoopStepWait()) }
+func MainLoopLevel() int { return int(C.IupMainLoopLevel()) }
+func Flush()             { C.IupFlush() }
+func ExitLoop()          { C.IupExitLoop() }
+
+func RecordInput(filename string, mode int) int {
+	cFilename := C.CString(filename)
+	defer C.free(unsafe.Pointer(cFilename))
+	return int(C.IupRecordInput(cFilename, C.int(mode)))
 }
 
-func Close() {
-	C.IupClose()
+func PlayInput(filename string) int {
+	cFilename := C.CString(filename)
+	defer C.free(unsafe.Pointer(cFilename))
+	return int(C.IupPlayInput(cFilename))
 }
 
-func MainLoop() int {
-	return int(C.IupMainLoop())
+func Help(url string) int {
+	cUrl := C.CString(url)
+	defer C.free(unsafe.Pointer(cUrl))
+	return int(C.IupHelp(cUrl))
+}
+
+func Load(filename string) string {
+	cFilename := C.CString(filename)
+	defer C.free(unsafe.Pointer(cFilename))
+	return C.GoString(C.IupLoad(cFilename))
+}
+
+func LoadBuffer(buffer string) string {
+	cBuffer := C.CString(buffer)
+	defer C.free(unsafe.Pointer(cBuffer))
+	return C.GoString(C.IupLoadBuffer(cBuffer))
+}
+
+func Version() string     { return C.GoString(C.IupVersion()) }
+func VersionDate() string { return C.GoString(C.IupVersionDate()) }
+func VersionNumber() int  { return int(C.IupVersionNumber()) }
+
+func SetLanguage(lang string) {
+	cLang := C.CString(lang)
+	defer C.free(unsafe.Pointer(cLang))
+	C.IupSetLanguage(cLang)
+}
+
+func GetLanguage() string { return C.GoString(C.IupGetLanguage()) }
+
+func SetLanguageString(name, str string) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	cStr := C.CString(str)
+	defer C.free(unsafe.Pointer(cStr))
+	C.IupSetLanguageString(cName, cStr)
+}
+
+func StoreLanguageString(name, str string) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	cStr := C.CString(str)
+	defer C.free(unsafe.Pointer(cStr))
+	C.IupStoreLanguageString(cName, cStr)
+}
+
+func GetLanguageString(name string) string {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return C.GoString(C.IupGetLanguageString(cName))
 }
 
 func Message(title, msg string) {
@@ -49,14 +112,16 @@ func Message(title, msg string) {
 	C.IupMessage(cTitle, cMsg)
 }
 
-func SetLanguage(lang string) {
-	cLang := C.CString(lang)
-	defer C.free(unsafe.Pointer(cLang))
-	C.IupSetLanguage(cLang)
-}
-
 func GetGlobal(name string) string {
 	cName := C.CString(name)
 	defer C.free(unsafe.Pointer(cName))
 	return C.GoString(C.IupGetGlobal(cName))
+}
+
+// SetHandle associates a name with an interface element and returns the previously
+// associated element.
+func SetHandle(name string, h *Handle) *Handle {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return (*Handle)(C.IupSetHandle(cName, h.cptr()))
 }
