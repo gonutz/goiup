@@ -27,3 +27,7 @@ func Item(title, action string) *Handle {
 	defer C.free(unsafe.Pointer(cAction))
 	return (*Handle)(C.IupItem(cTitle, cAction))
 }
+
+func Separator() *Handle {
+	return (*Handle)(C.IupSeparator())
+}

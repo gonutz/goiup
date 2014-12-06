@@ -117,10 +117,58 @@ func (h *Handle) SetAttribute(name, value string) {
 	C.IupSetStrAttribute(h.cptr(), cName, cValue)
 }
 
+func (h *Handle) SetInt(name string, value int) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetInt(h.cptr(), cName, C.int(value))
+}
+
+func (h *Handle) SetFloat(name string, value float32) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetFloat(h.cptr(), cName, C.float(value))
+}
+
+func (h *Handle) SetDouble(name string, value float64) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetDouble(h.cptr(), cName, C.double(value))
+}
+
+func (h *Handle) SetRGB(name string, r, g, b byte) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetRGB(h.cptr(), cName, C.uchar(r), C.uchar(g), C.uchar(b))
+}
+
 func (h *Handle) GetAttribute(name string) string {
 	cName := C.CString(name)
 	defer C.free(unsafe.Pointer(cName))
 	return C.GoString(C.IupGetAttribute(h.cptr(), cName))
+}
+
+func (h *Handle) GetInt(name string) int {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return int(C.IupGetInt(h.cptr(), cName))
+}
+
+func (h *Handle) GetInt2(name string) int {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return int(C.IupGetInt2(h.cptr(), cName))
+}
+
+func (h *Handle) GetFloat(name string) float32 {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return float32(C.IupGetFloat(h.cptr(), cName))
+}
+
+func (h *Handle) GetDouble(name string) float64 {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return float64(C.IupGetDouble(h.cptr(), cName))
 }
 
 func (h *Handle) SetCallback(name string, cb interface{}) {
@@ -135,4 +183,8 @@ func (h *Handle) GetClassName() string {
 
 func (h *Handle) GetClassType() string {
 	return C.GoString(C.IupGetClassType(h.cptr()))
+}
+
+func (h *Handle) SetFocus() *Handle {
+	return (*Handle)(C.IupSetFocus(h.cptr()))
 }

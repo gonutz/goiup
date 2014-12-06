@@ -2,7 +2,7 @@ package iup
 
 /*
 #cgo linux LDFLAGS: -liup
-#cgo windows LDFLAGS: -liup -luuid -lgdi32 -lole32 -lcomctl32 -lcomdlg32
+#cgo windows LDFLAGS: -liup -liupstub -luuid -lgdi32 -lole32 -lcomctl32 -lcomdlg32
 #include <iup.h>
 #include <stdlib.h>
 */
@@ -25,6 +25,15 @@ const (
 	CLOSE    = C.IUP_CLOSE
 	IGNORE   = C.IUP_IGNORE
 	CONTINUE = C.IUP_CONTINUE
+
+	CENTER       = C.IUP_CENTER
+	LEFT         = C.IUP_LEFT
+	TOP          = C.IUP_TOP
+	BOTTOM       = C.IUP_BOTTOM
+	RIGHT        = C.IUP_RIGHT
+	MOUSEPOS     = C.IUP_MOUSEPOS
+	CENTERPARENT = C.IUP_CENTERPARENT
+	CURRENT      = C.IUP_CURRENT
 )
 
 // TODO convert os.Args to int* and char** and pass them to IupOpen
@@ -118,10 +127,30 @@ func GetGlobal(name string) string {
 	return C.GoString(C.IupGetGlobal(cName))
 }
 
+func SetGlobal(name, value string) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	cValue := C.CString(value)
+	defer C.free(unsafe.Pointer(cValue))
+	C.IupSetStrGlobal(cName, cValue)
+}
+
 // SetHandle associates a name with an interface element and returns the previously
 // associated element.
 func SetHandle(name string, h *Handle) *Handle {
 	cName := C.CString(name)
 	defer C.free(unsafe.Pointer(cName))
 	return (*Handle)(C.IupSetHandle(cName, h.cptr()))
+}
+
+// GetHandle returns the interface element associated with the given name (per
+// SetHandle).
+func GetHandle(name string) *Handle {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return (*Handle)(C.IupGetHandle(cName))
+}
+
+func GetFocus() *Handle {
+	return (*Handle)(C.IupGetFocus())
 }

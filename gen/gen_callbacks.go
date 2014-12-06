@@ -17,6 +17,7 @@ func genCallbacks(count int, w io.Writer) {
 		[]paramType{intType},
 		[]paramType{intType, intType},
 		[]paramType{intType, intType, stringType},
+		[]paramType{intType, stringType},
 		[]paramType{intType, intType, intType, intType, stringType},
 		[]paramType{stringType, intType, intType, intType},
 	}
@@ -37,7 +38,10 @@ func genCallbacks(count int, w io.Writer) {
 
 const callbackTemplate = `package gen
 
-import "reflect"
+import (
+	"reflect"
+	"strings"
+)
 
 /*
 
@@ -52,7 +56,24 @@ import "C"
 func GetNextCallback(cb interface{}) C.Icallback {
 	typ := reflect.TypeOf(cb)
 	checkIntReturningFunction(typ)
-{{.Checks}}	panic("unsupported callback function type")
+{{.Checks}}	panic("unsupported callback function type: " + typeToString(typ))
+}
+
+func typeToString(t reflect.Type) string {
+	inTypes := make([]string, t.NumIn())
+	outTypes := make([]string, t.NumOut())
+	for i := range inTypes {
+		inTypes[i] = t.In(i).String()
+	}
+	for i := range outTypes {
+		outTypes[i] = t.Out(i).String()
+	}
+	in := strings.Join(inTypes, ", ")
+	out := strings.Join(outTypes, ", ")
+	if len(outTypes) > 1 {
+		out = "(" + out + ")"
+	}
+	return "func(" + in + ") " + out
 }
 
 func checkIntReturningFunction(typ reflect.Type) {
