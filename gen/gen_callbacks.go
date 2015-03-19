@@ -20,6 +20,7 @@ func genCallbacks(count int, w io.Writer) {
 		[]paramType{intType, stringType},
 		[]paramType{intType, intType, intType, intType, stringType},
 		[]paramType{stringType, intType, intType, intType},
+		[]paramType{stringType, stringType},
 	}
 	t.Execute(w, struct {
 		Externs     string

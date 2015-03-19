@@ -3,6 +3,14 @@ package iup
 /*
 #include <iup.h>
 #include <stdlib.h>
+
+static inline char** allocateStringArrayOfSize(int size) {
+	return (char**) malloc(size * sizeof(char**));
+}
+
+static inline char* getStringElementAtIndex(char** array, int index) {
+	return array[index];
+}
 */
 import "C"
 
@@ -94,10 +102,17 @@ func (h *Handle) ResetAttribute(name string) {
 	C.IupResetAttribute(h.cptr(), cName)
 }
 
-// TODO
-//func (h *Handle) GetAllAttributes(name, value string) {
-//	numAttributes := int(C.IupGetAllAttributes(h.cptr(), nil, 0))
-//}
+func (h *Handle) GetAllAttributes() (names []string) {
+	maxNumAttributes := int(C.IupGetAllAttributes(h.cptr(), nil, 0))
+	cNames := C.allocateStringArrayOfSize(C.int(maxNumAttributes))
+	defer C.free(unsafe.Pointer(cNames))
+	numAttributes := int(C.IupGetAllAttributes(h.cptr(), cNames, C.int(maxNumAttributes)))
+	names = make([]string, numAttributes)
+	for i := range names {
+		names[i] = C.GoString(C.getStringElementAtIndex(cNames, C.int(i)))
+	}
+	return
+}
 
 func (h *Handle) SetAttributes(str string) {
 	cStr := C.CString(str)
@@ -159,6 +174,20 @@ func (h *Handle) GetInt2(name string) int {
 	return int(C.IupGetInt2(h.cptr(), cName))
 }
 
+func (h *Handle) GetIntInt(name string) (val1, val2, numVals int) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	var i1, i2 C.int
+	numVals = int(C.IupGetIntInt(
+		h.cptr(),
+		cName,
+		(*C.int)(unsafe.Pointer(&i1)),
+		(*C.int)(unsafe.Pointer(&i2))))
+	val1 = int(i1)
+	val2 = int(i2)
+	return
+}
+
 func (h *Handle) GetFloat(name string) float32 {
 	cName := C.CString(name)
 	defer C.free(unsafe.Pointer(cName))
@@ -169,6 +198,19 @@ func (h *Handle) GetDouble(name string) float64 {
 	cName := C.CString(name)
 	defer C.free(unsafe.Pointer(cName))
 	return float64(C.IupGetDouble(h.cptr(), cName))
+}
+
+func (h *Handle) GetRGB(name string) (r, g, b byte) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	var cR, cG, cB C.uchar
+	C.IupGetRGB(
+		h.cptr(),
+		cName,
+		(*C.uchar)(unsafe.Pointer(&cR)),
+		(*C.uchar)(unsafe.Pointer(&cG)),
+		(*C.uchar)(unsafe.Pointer(&cB)))
+	return byte(cR), byte(cG), byte(cB)
 }
 
 func (h *Handle) SetCallback(name string, cb interface{}) {
@@ -187,4 +229,74 @@ func (h *Handle) GetClassType() string {
 
 func (h *Handle) SetFocus() *Handle {
 	return (*Handle)(C.IupSetFocus(h.cptr()))
+}
+
+func (h *Handle) SetAttributeId(name string, id int, value string) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	cValue := C.CString(value)
+	defer C.free(unsafe.Pointer(cValue))
+	C.IupSetStrAttributeId(h.cptr(), cName, C.int(id), cValue)
+}
+
+func (h *Handle) SetIntId(name string, id, value int) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetIntId(h.cptr(), cName, C.int(id), C.int(value))
+}
+
+func (h *Handle) SetFloatId(name string, id int, value float32) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetFloatId(h.cptr(), cName, C.int(id), C.float(value))
+}
+
+func (h *Handle) SetDoubleId(name string, id int, value float64) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetDoubleId(h.cptr(), cName, C.int(id), C.double(value))
+}
+
+func (h *Handle) SetRGBId(name string, id int, r, g, b byte) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	C.IupSetRGBId(h.cptr(), cName, C.int(id), C.uchar(r), C.uchar(g), C.uchar(b))
+}
+
+func (h *Handle) GetAttributeId(name string, id int) string {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return C.GoString(C.IupGetAttributeId(h.cptr(), cName, C.int(id)))
+}
+
+func (h *Handle) GetIntId(name string, id int) int {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return int(C.IupGetIntId(h.cptr(), cName, C.int(id)))
+}
+
+func (h *Handle) GetFloatId(name string, id int) float32 {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return float32(C.IupGetFloatId(h.cptr(), cName, C.int(id)))
+}
+
+func (h *Handle) GetDoubleId(name string, id int) float64 {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	return float64(C.IupGetDoubleId(h.cptr(), cName, C.int(id)))
+}
+
+func (h *Handle) GetRGBId(name string, id int) (r, g, b byte) {
+	cName := C.CString(name)
+	defer C.free(unsafe.Pointer(cName))
+	var cR, cG, cB C.uchar
+	C.IupGetRGBId(
+		h.cptr(),
+		cName,
+		C.int(id),
+		(*C.uchar)(unsafe.Pointer(&cR)),
+		(*C.uchar)(unsafe.Pointer(&cG)),
+		(*C.uchar)(unsafe.Pointer(&cB)))
+	return byte(cR), byte(cG), byte(cB)
 }

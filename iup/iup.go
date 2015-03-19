@@ -8,11 +8,9 @@ package iup
 */
 import "C"
 
-// not working
-// #cgo windows CFLAGS: -fno-stack-check -fno-stack-protector -mno-stack-arg-probe
-// -lmingwex -lmingw32
-
 import (
+	"errors"
+	"strings"
 	"unsafe"
 )
 
@@ -38,10 +36,17 @@ const (
 
 // TODO convert os.Args to int* and char** and pass them to IupOpen
 // then place the (possibly modified) args back into os.Args
-func Open() int { return int(C.IupOpen(nil, nil)) }
-func Close()    { C.IupClose() }
+func Open() error {
+	result := int(C.IupOpen(nil, nil))
+	if result == ERROR {
+		return errors.New("IupOpen failed.")
+	}
+	return nil
+}
 
-//func ImageLibOpen()      { C.IupImageLibOpen() } // TODO undefined ref
+func Close() { C.IupClose() }
+
+//func ImageLibOpen() { C.IupImageLibOpen() } // TODO undefined ref
 func MainLoop() int      { return int(C.IupMainLoop()) }
 func LoopStep() int      { return int(C.IupLoopStep()) }
 func LoopStepWait() int  { return int(C.IupLoopStepWait()) }
@@ -73,10 +78,14 @@ func Load(filename string) string {
 	return C.GoString(C.IupLoad(cFilename))
 }
 
-func LoadBuffer(buffer string) string {
+func LoadBuffer(buffer string) error {
 	cBuffer := C.CString(buffer)
 	defer C.free(unsafe.Pointer(cBuffer))
-	return C.GoString(C.IupLoadBuffer(cBuffer))
+	result := C.GoString(C.IupLoadBuffer(cBuffer))
+	if result == "" {
+		return nil
+	}
+	return errors.New(result)
 }
 
 func Version() string     { return C.GoString(C.IupVersion()) }
@@ -119,6 +128,57 @@ func Message(title, msg string) {
 	cMsg := C.CString(msg)
 	defer C.free(unsafe.Pointer(cMsg))
 	C.IupMessage(cTitle, cMsg)
+}
+
+func Alarm1(title, msg, button string) int {
+	cTitle := C.CString(title)
+	defer C.free(unsafe.Pointer(cTitle))
+	cMsg := C.CString(msg)
+	defer C.free(unsafe.Pointer(cMsg))
+	cButton := C.CString(button)
+	defer C.free(unsafe.Pointer(cButton))
+	return int(C.IupAlarm(cTitle, cMsg, cButton, nil, nil))
+}
+
+func Alarm2(title, msg, button1, button2 string) int {
+	cTitle := C.CString(title)
+	defer C.free(unsafe.Pointer(cTitle))
+	cMsg := C.CString(msg)
+	defer C.free(unsafe.Pointer(cMsg))
+	cButton1 := C.CString(button1)
+	defer C.free(unsafe.Pointer(cButton1))
+	cButton2 := C.CString(button2)
+	defer C.free(unsafe.Pointer(cButton2))
+	return int(C.IupAlarm(cTitle, cMsg, cButton1, cButton2, nil))
+}
+
+func Alarm3(title, msg, button1, button2, button3 string) int {
+	cTitle := C.CString(title)
+	defer C.free(unsafe.Pointer(cTitle))
+	cMsg := C.CString(msg)
+	defer C.free(unsafe.Pointer(cMsg))
+	cButton1 := C.CString(button1)
+	defer C.free(unsafe.Pointer(cButton1))
+	cButton2 := C.CString(button2)
+	defer C.free(unsafe.Pointer(cButton2))
+	cButton3 := C.CString(button3)
+	defer C.free(unsafe.Pointer(cButton3))
+	return int(C.IupAlarm(cTitle, cMsg, cButton1, cButton2, cButton3))
+}
+
+func GetFile(defaultFolderAndFilter string) (status int, filename string) {
+	const MaxSize = 4096
+	// TODO return error instead of panicing or document that this panics
+	if len(defaultFolderAndFilter) > MaxSize {
+		panic("string too long (see IUP documentation for IupGetFile)")
+	}
+	fillers := strings.Repeat(" ", MaxSize-1-len(defaultFolderAndFilter))
+	var cStringDelimiter byte = 0
+	cPath := C.CString(defaultFolderAndFilter + string(cStringDelimiter) + fillers)
+	defer C.free(unsafe.Pointer(cPath))
+	status = int(C.IupGetFile(cPath))
+	filename = C.GoString(cPath)
+	return
 }
 
 func GetGlobal(name string) string {
