@@ -32,6 +32,13 @@ const (
 	MOUSEPOS     = C.IUP_MOUSEPOS
 	CENTERPARENT = C.IUP_CENTERPARENT
 	CURRENT      = C.IUP_CURRENT
+
+	// these are additional constants to give common IUP return values names
+
+	// these are the STATUS values after using a file dialog
+	NewFile                 = 1
+	ExistingFileOrDirectory = 0
+	FileOperationCancelled  = -1
 )
 
 // TODO convert os.Args to int* and char** and pass them to IupOpen
