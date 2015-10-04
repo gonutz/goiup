@@ -115,6 +115,10 @@ func Dialog(child *Handle) *Handle {
 	return (*Handle)(C.IupDialog(child.cptr()))
 }
 
+func LayoutDialog(dialog *Handle) *Handle {
+	return (*Handle)(C.IupLayoutDialog(dialog.cptr()))
+}
+
 func FileDialog() *Handle     { return (*Handle)(C.IupFileDlg()) }
 func MessageDialog() *Handle  { return (*Handle)(C.IupMessageDlg()) }
 func ColorDialog() *Handle    { return (*Handle)(C.IupColorDlg()) }
